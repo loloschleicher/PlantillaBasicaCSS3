@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "dancing-script";
+  src: url("../CSS/dancing-script.otf");
+}
+header{
+  background-color: #5b7989;
+  height: 100px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.enlaces{
+  position: relative;
+  top: -25px;
+  left: 650px;
+  margin: 10px;
+  color: white;
+  font-family: "dancing-script";
+}
+body {
+  background-color: #02010a;
+}
+h1{
+  font-family: "dancing-script";
+  position: relative;
+  top: 25px;
+  text-align: justify;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+  text-indent: 12px;
+}
+#contenedor{
+  width: 900px;
+  margin: 0 auto;
+  animation: slidein 1s;
+}
+@-webKit-Keyframes slidein{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+
+}
+#div1{
+  background-color: #82c3a6;
+  height: 350px;
+}
+#imgCentral{
+  position: relative;
+  left: 90px;
+  top: 15px;
+  width: 720px;
+  height: 320px;
+  box-shadow: 2px 2px 2px #02010a;
+}
+#div2{
+  column-count: 2;
+  column-gap: 2em;
+  height: 280px;
+  background-color: #d5c75f;
+}
+#imgSec1{
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 400px;
+  height: 210px;
+  box-shadow: 2px 2px 2px #02010a;
+  transition: 1s;
+}
+#imgSec1:hover{
+  transform: rotate(10deg);
+  -webkit-filter: drop-shadow(2px 2px 2px #82c3a6);
+}
+#imgSec2{
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 400px;
+  height: 210px;
+  box-shadow: 2px 2px 2px #02010a;
+  transition: 1s;
+}
+#imgSec2:hover{
+  margin-left: 20px;
+  margin-bottom: 5px;
+  -webkit-filter: drop-shadow(2px 2px 2px #82c3a6);
+}
+#paisajes{
+  position: absolute;
+  top: 720px;
+  left: 350px;
+  color: black;
+  font-family: "dancing-script";
+}
+#retratos{
+  position: absolute;
+  top: 720px;
+  left: 820px;
+  color: black;
+  font-family: "dancing-script";
+}
+footer{
+  height: 180px;
+  background-color: #C6d5c5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: "dancing-script";
+}
+.footer{
+  width: 25%;
+  float: left;
+}
+#div3{
+  column-count: 3;
+  column-gap: 2em;
+  height: 450px;
+  background-color: #d5c75f;
+}
+.img{
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 250px;
+  height: 200px;
+  box-shadow: 2px 2px 2px #02010a;
+}
+@media (max-width:700px){
+  #contenedor{
+    width: 100%;
+  }
+  header{
+    height: 150px;
+  }
+  h1{
+    position: relative;
+    top: 10px;
+    text-align: center;
+    text-indent: 2px;
+  }
+  .enlaces{
+    position: relative;
+    top: 7px;
+    left: 30px;
+    margin: 10px;
+    color: white;
+  }
+  #div1{
+    height: 150px;
+  }
+  #imgCentral{
+    width: 250px;
+    height: 130px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+  }
+  #div2{
+    height: 550px;
+    column-count: 1;
+  }
+  #imgSec1{
+    width: 250px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+  }
+  #imgSec2{
+    width: 250px;
+    position: relative;
+    top: 70px;
+    left: 20px;
+  }
+  #div3{
+  column-count: 1;
+  height: 1330px;
+  }
+  .img{
+    margin-left: 5px;
+  }
+  #paisajes{
+    position: absolute;
+    left: 130px;
+    top: 560px;
+  }
+  #retratos{
+    position: absolute;
+    top: 830px;
+    left: 130px;
+  }
+  footer{
+    height: 620px;
+  }
+  .footer{
+    width: 100%;
+    text-indent: 10px;
+  }
+}
